@@ -2,7 +2,7 @@
 
 ################################
 BOOTSTRAP_SERVERS=kafka:29092
-SCHEMA_REGISTRY_URL=http://schema-registry:8081
+SCHEMA_REGISTRY_URL=http://schema-registry:18081
 
 echo -e "\n*** Sampling messages in Kafka topics ***\n"
 
