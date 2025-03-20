@@ -92,7 +92,7 @@ public class MenuOrderController {
             @PositiveOrZero(message = "Страница должна быть >= 0.")
             int from,
             @RequestParam(value = "size", defaultValue = "10")
-            @Positive(message = "Размер страницы должен быть > 0.")
+            @Positive(message = "11Размер страницы должен быть > 0.")
             int size,
             @RequestParam(value = "sortBy", defaultValue = "date_asc")
             @NotBlank(message = "Параметр сортировки не должен быть пустым.")
