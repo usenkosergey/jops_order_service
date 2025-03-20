@@ -66,7 +66,7 @@ public class MenuOrderController {
     @ResponseStatus(HttpStatus.CREATED)
     public Mono<OrderResponse> submitMenuOrder(@RequestBody @Valid CreateOrderRequest request,
                                                @RequestHeader(USER_HEADER) String username) {
-        log.info("1Received POST request to submit order99: {}", request);
+        log.info("Received POST request to submit order99: {}", request);
         return menuOrderService.createOrder(request, username);
     }
 
