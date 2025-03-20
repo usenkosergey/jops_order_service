@@ -98,7 +98,7 @@ public class MenuOrderController {
             @NotBlank(message = "Параметр сортировки не должен быть пустым.")
             String sortBy,
             @RequestHeader(USER_HEADER) String username) {
-        log.info("11Received request to GET orders of user with name={}", username);
+        log.info("Received request to GET orders of user with name={}", username);
         return menuOrderService.getOrdersOfUser(username, SortBy.fromString(sortBy), from, size);
     }
 }
